@@ -1,0 +1,7 @@
+:root {
+  --box-bg: black;
+  --box-text-color: white;
+}
+.card {
+  background-color: var(--box-bg);
+}
