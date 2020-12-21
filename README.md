@@ -1,2 +1,2 @@
-# js-projects
+# todo-project
 New Javascript projects
