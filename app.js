@@ -106,7 +106,7 @@ const tasks = [
       '--input-focus-box-shadow': '0 0 0 0.2rem rgba(141, 143, 146, 0.25)',
     },
   };
-  let lastSelectedTheme = 'default';
+  let lastSelectedTheme = localStorage.getItem('app_theme') || 'default';
 
   //* Добавляем наш fragment в UL // Element UI
   const listContainer = document.querySelector('.tasks-list-section .list-group');
@@ -115,7 +115,7 @@ const tasks = [
   const inputBody = form.elements['body'];
   const themSelect = document.getElementById('themeSelect');
 
-
+  setTheme(lastSelectedTheme);
   //* Events
   renderAllTasks(objOfTasks);
   form.addEventListener('submit', onFormSubmit);
@@ -213,6 +213,7 @@ const tasks = [
     };
     setTheme(selectedTheme);
     lastSelectedTheme = selectedTheme;
+    localStorage.setItem('app_theme', selectedTheme);
   }
   function setTheme(name) {
     const selectedThemeObj = themes[name];
