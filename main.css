@@ -71,3 +71,27 @@ body {
   border-color: var(--input-focus-border-color);
   box-shadow: var(--input-focus-box-shadow);
 }
+
+.container-table {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.totalBalance {
+  text-align: right;
+  position: absolute;
+  right: 0px;
+}
+table {
+  width: 100%;
+  position: relative;
+}
+.tdEmail {
+  padding: 5px 20px;
+}
+.tdName {
+  padding: 10px 20px;
+}
+.tr-list {
+  border-bottom: 1px solid #bd2130;
+}
